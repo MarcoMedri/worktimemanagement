@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Work Calculator</h1>
+
+  <div class="form-group">
+    <label for="startTime">Start Time:</label>
+    <input type="time" id="startTime" [(ngModel)]="startTime" required>
+  </div>
+
+  <div class="form-group">
+    <label for="breakTime">Break Time (minutes):</label>
+    <input type="number" id="breakTime" [(ngModel)]="breakTime" required>
+  </div>
+
+  <div class="form-group">
+    <label for="hoursToWork">Hours to Work:</label>
+    <input type="number" id="hoursToWork" [(ngModel)]="hoursToWork" required>
+  </div>
+
+  <div class="form-group">
+    <label for="endTime">End Time:</label>
+    <input type="time" id="endTime" [(ngModel)]="endTime">
+  </div>
+
+  <button (click)="calculate()" class="calculate-button">Calculate</button>
+
+  <div *ngIf="hoursWorked !== null" class="results">
+    <p>Hours Worked: {{ hoursWorked | number:'1.2-2' }}</p>
+    <p>Extra Time: {{ extraTime | number:'1.2-2' }}</p>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   font-family: sans-serif;
+   background-color: #f0fff0; /* Pastel green background */
+ }
+
+ h1 {
+   color: #008000; /* Green heading */
+   margin-bottom: 20px;
+ }
+
+ .timer {
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+ .controls button {
+   background-color: #3cb371; /* Pastel green button */
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 20px; /* Rounded buttons */
+   cursor: pointer;
+   margin: 0 5px;
+ }
